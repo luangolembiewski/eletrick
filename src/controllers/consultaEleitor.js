@@ -40,7 +40,7 @@ const consulta = async(request,response)=>{
         await time()
     }catch(e){
         console.log("Erro: "+e)
-        return response.status(500).json();
+        return response.status(500).json(e);
     }
 }
 
