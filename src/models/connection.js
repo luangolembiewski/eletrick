@@ -3,10 +3,10 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const connection = mysql.createPool({
-    host: process.env.MYSQL_HOST,
-    user:process.env.MYSQL_USER,
-    password:process.env.MYSQL_PASSWORD, 
-    database:process.env.MYSQL_DB
+    host: 6128,
+    user: root,
+    password: De0opgarg8NU0mNeQq1j, 
+    database: railway
 });
 
 module.exports = connection;
