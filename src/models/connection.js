@@ -1,13 +1,14 @@
 const mysql = require('mysql2/promise');
-const dotenv = require("dotenv");
-dotenv.config();
+const env = require("dotenv");
+env.config();
 
 const connection = mysql.createPool({
-    host: 'containers-us-west-210.railway.app',
-    user: 'root',
-    password: 'k2VFPgdxcWLd4hQuzVlC', 
-    database: 'eletrick',
-    port: '7843'
+    host: process.env.HOST || 'localhost',
+    user: process.env.USER || 'luan',
+    password: process.env.PASSWORD || '123456', 
+    database: process.env.DATABASE || 'eletrick',
+    port: process.env.PORTDB || '3306'
+    
 });
 
 module.exports = connection;
