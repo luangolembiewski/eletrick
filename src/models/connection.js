@@ -3,10 +3,11 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const connection = mysql.createPool({
-    host: '6128',
+    host: 'containers-us-west-210.railway.app',
     user: 'root',
-    password: 'De0opgarg8NU0mNeQq1j', 
-    database: 'railway'
+    password: 'k2VFPgdxcWLd4hQuzVlC', 
+    database: 'eletrick',
+    port: '7843'
 });
 
 module.exports = connection;
