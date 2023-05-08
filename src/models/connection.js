@@ -3,9 +3,9 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const connection = mysql.createPool({
-    host: '6128',
+    host: 'containers-us-west-210.railway.app',
     user: 'root',
-    password: 'De0opgarg8NU0mNeQq1j', 
+    password: 'k2VFPgdxcWLd4hQuzVlC', 
     database: 'railway'
 });
 
